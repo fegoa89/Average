@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Average::VERSION
   spec.authors       = ["Fernando"]
   spec.email         = ["fgonzalezaguilera@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
+  spec.description   = %q{Find the arithmethic mean/mode/median of an array of numbers .}
   spec.summary       = %q{TODO: Write a gem summary}
   spec.homepage      = ""
   spec.license       = "MIT"
