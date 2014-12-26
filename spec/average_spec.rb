@@ -8,8 +8,6 @@ describe Average do
 
   let(:mode_array) { [1,1,2,2,3,4] }
 
-  let(:mode_mixed_array) { [1,1.0,2,2.0,3.0,4] }
-
   describe '#mean' do
 
     context 'with a array of integers' do
@@ -63,12 +61,6 @@ describe Average do
     context 'with a array of integers' do
       it 'should calculate the correct mode returning only one mode' do
         expect(unique_mode(mode_array)).to eq(1)
-      end
-    end
-
-    context 'with a mixed array of integers and floats' do
-      it 'should calculate the correct mode returning only one mode' do
-        expect(unique_mode(mode_mixed_array)).to eq(1)
       end
     end
 
