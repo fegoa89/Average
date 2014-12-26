@@ -4,7 +4,7 @@ def mode(array)
 end
 
 def repetition_hash(array)
-  result = array.inject({}) { |key, value| key[value.to_f] = array.count(value.to_f); key }
+  result = array.inject({}) { |key, value| key[value] = array.count(value.to_f); key }
   { hash_result: result, max_repetition: result.values.max }
 end
 

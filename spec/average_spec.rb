@@ -56,12 +56,6 @@ describe Average do
       end
     end
 
-    context 'with a mixed array of integers and floats' do
-      it 'should calculate the correct mode' do
-        expect(mode(mode_mixed_array)).to eq([1, 2])
-      end
-    end
-
   end
 
   describe '#unique_mode' do
@@ -79,4 +73,22 @@ describe Average do
     end
 
   end
+
+  describe '#repetition_hash' do
+    context 'should return a hash' do
+      subject { repetition_hash(mode_array) }
+      it 'with hash_result key' do
+        expect(subject).to include :hash_result
+      end
+
+      it 'with hash_result key' do
+        expect(subject[:hash_result]).to eql( { 1 => 2, 2 => 2, 3 => 1, 4 => 1 } )
+      end
+
+      it 'with max_repetition key' do
+        expect(subject).to include :max_repetition
+      end
+    end
+  end
+
 end
