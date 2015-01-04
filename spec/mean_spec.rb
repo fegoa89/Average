@@ -2,11 +2,9 @@ require 'spec_helper'
 
 describe Average do
 
-  let(:int_array) { [3,4,5] }
+  let(:int_array)   { [3,4,5]                  }
 
   let(:mixed_array) { [3, 4.0, 5, 2.0, 3, 1.0] }
-
-  let(:mode_array) { [1,1,2,2,3,4] }
 
   describe '#mean' do
 
