@@ -17,6 +17,12 @@ describe Average do
       end
     end
 
+    context 'with a empty array' do
+      it 'should return nil' do
+        expect(mode([])).to eq([])
+      end
+    end
+
   end
 
   describe '#unique_mode' do
@@ -24,6 +30,12 @@ describe Average do
     context 'with a array of integers' do
       it 'should calculate the correct mode returning only one mode' do
         expect(unique_mode(mode_array)).to eq(1)
+      end
+    end
+
+    context 'with a empty array' do
+      it 'should return nil' do
+        expect(unique_mode([])).to eq([])
       end
     end
 
