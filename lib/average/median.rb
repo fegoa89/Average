@@ -1,9 +1,7 @@
 def median(array)
-  if !array.empty?
-    get_median(array)
-  else
-    nil
-  end
+  return if !valid_array?(array)
+  array = clean_array(array)
+  get_median(array)
 end
 
 def get_median(array)
