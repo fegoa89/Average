@@ -2,12 +2,11 @@ require 'spec_helper'
 
 describe Average do
 
-  let(:int_array) { [3,4,5] }
+  let(:int_array)   { [3,4,5]                  }
+
+  let(:mode_array)  { [1,1,2,2,3,4]            }
 
   let(:mixed_array) { [3, 4.0, 5, 2.0, 3, 1.0] }
-
-  let(:mode_array) { [1,1,2,2,3,4] }
-
 
   describe '#mode' do
 
@@ -18,8 +17,14 @@ describe Average do
     end
 
     context 'with a empty array' do
-      it 'should return nil' do
-        expect(mode([])).to eq([])
+      it 'should return a empty array' do
+        expect(mode([])).to eq(nil)
+      end
+    end
+
+    context 'with a nil object' do
+      it 'should return a empty array' do
+        expect(mode([])).to eq(nil)
       end
     end
 
@@ -35,13 +40,21 @@ describe Average do
 
     context 'with a empty array' do
       it 'should return nil' do
-        expect(unique_mode([])).to eq([])
+        expect(unique_mode([])).to eq(nil)
       end
     end
+
+    context 'with a nil object' do
+      it 'should return nil' do
+        expect(unique_mode(nil)).to eq(nil)
+      end
+    end
+
 
   end
 
   describe '#repetition_hash' do
+
     context 'should return a hash' do
       subject { repetition_hash(mode_array) }
       it 'with hash_result key' do
@@ -56,6 +69,19 @@ describe Average do
         expect(subject).to include :max_repetition
       end
     end
+
+    context 'with a empty array' do
+      it 'should return nil' do
+        expect(repetition_hash([])).to eql(nil)
+      end
+    end
+
+    context 'with a empty array' do
+      it 'should return nil' do
+        expect(repetition_hash(nil)).to eql(nil)
+      end
+    end
+
   end
 
 end
