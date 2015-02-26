@@ -1,5 +1,5 @@
 def mode(array)
-  return if !valid_array?(array)
+  return if not valid_array?(array)
   array  = clean_array(array)
   result = repetition_hash(array)
   result[:hash_result].select { |key, value| value == result[:max_repetition] }.keys.collect { |float| float.to_i }

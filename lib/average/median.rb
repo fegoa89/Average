@@ -1,5 +1,5 @@
 def median(array)
-  return if !valid_array?(array)
+  return if not valid_array?(array)
   array = clean_array(array)
   get_median(array)
 end
@@ -7,7 +7,7 @@ end
 def get_median(array)
   array.sort!
   if array.length.even?
-    mean(middle_items_to_average(array))
+    mean( middle_items_to_average(array) )
   else
     array[ array.length / 2.to_f ]
   end
@@ -18,5 +18,5 @@ def middle_item(array)
 end
 
 def middle_items_to_average(array)
-  array[middle_item(array) -1 .. middle_item(array)]
+  array[ middle_item(array) -1 .. middle_item(array) ]
 end
