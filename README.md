@@ -1,6 +1,6 @@
 # Average
 
-TODO: Write a gem description
+Simple gem to calculate mean, median and mode from an array.
 
 ## Installation
 
@@ -18,7 +18,37 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Get Median
+
+    $ [3, 4, 5, 2, 3, 1].get_mean
+    $ 3.0
+    $ mean([3, 4, 5, 2, 3, 1])
+    $ 3.0
+
+Get Mode
+
+    $ [2,4,6,14,21,24,229,24,24,39].get_mode
+    $ [24]
+    $ mode([2,4,6,14,21,24,229,24,24,39])
+    $ [24]
+
+It gives back an array due that could be possible to have more than one mode in a array
+
+    $ mode([1, 2, 2, 2, 3, 3, 7, 7, 7, 9])
+    $ [2, 7]
+Get Median
+
+    $ [3,4,5].get_median
+    $ 4
+    $ median([3,4,5])
+    $ 4
+    
+All methods described aboved can handle an array of integers, floats, strings or a mixed array with all of them
+    
+    $ [3, "4", 5, 2.0, 3, "1.0"].get_mean
+    $ 3.0
+    $ mean([3, "4", 5, 2.0, 3, "1.0"])
+    $ 3.0
 
 ## Contributing
 
