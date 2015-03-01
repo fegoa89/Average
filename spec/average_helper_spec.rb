@@ -14,7 +14,7 @@ describe Average do
     end
 
     context 'with a mixed array of invalid elements' do
-      it 'should return true' do
+      it 'should return false' do
         expect(valid_array?(invalid_array)).to be(false)
       end
     end
