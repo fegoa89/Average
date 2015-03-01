@@ -34,16 +34,16 @@ describe Average do
 
   end
 
-  describe '#get_median' do
+  describe '#calculate_median' do
     context 'with an even array' do
       it 'should give back the middle value' do
-        expect(get_median(array)).to eq(2.0)
+        expect(calculate_median(array)).to eq(2.0)
       end
     end
 
     context 'with a _not_ even array' do
       it 'should give back the the element on the middle' do
-        expect(get_median(mode_array_not_pair)).to eq(2)
+        expect(calculate_median(mode_array_not_pair)).to eq(2)
       end
     end
   end
