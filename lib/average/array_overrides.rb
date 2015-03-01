@@ -1,15 +1,15 @@
 require 'average/mean'
 require 'average/median'
 class Array
-  def get_mean
-    mean(self)
+  def mean
+    get_mean(self)
   end
 
-  def get_mode
-    mode(self)
+  def mode
+    get_mode(self)
   end
 
-  def get_median
-    median(self)
+  def median
+    get_median(self)
   end
 end

@@ -8,23 +8,23 @@ describe Average do
 
   let(:mixed_array) { [3, 4.0, 5, 2.0, 3, 1.0] }
 
-  describe '#mode' do
+  describe '#get_mode' do
 
     context 'with a array of integers' do
       it 'should calculate the correct mode' do
-        expect(mode(mode_array)).to eq([1, 2])
+        expect(get_mode(mode_array)).to eq([1, 2])
       end
     end
 
     context 'with a empty array' do
       it 'should return a empty array' do
-        expect(mode([])).to eq(nil)
+        expect(get_mode([])).to eq(nil)
       end
     end
 
     context 'with a nil object' do
       it 'should return a empty array' do
-        expect(mode([])).to eq(nil)
+        expect(get_mode([])).to eq(nil)
       end
     end
 

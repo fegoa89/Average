@@ -12,23 +12,23 @@ describe Average do
 
   let(:mode_array_not_pair) { [1, 1, 2, 2, 3, 4, 5]   }
 
-  describe '#median' do
+  describe '#get_median' do
 
     context 'with a array of integers' do
       it 'should calculate the correct median' do
-        expect(median(int_array)).to eq(4)
+        expect(get_median(int_array)).to eq(4)
       end
     end
 
     context 'with a mixed array of integers and floats' do
       it 'should calculate the correct median' do
-        expect(median(mixed_array)).to eq(3)
+        expect(get_median(mixed_array)).to eq(3)
       end
     end
 
     context 'with an empty array' do
       it 'should gives back a nil' do
-        expect(median([])).to eq(nil)
+        expect(get_median([])).to eq(nil)
       end
     end
 

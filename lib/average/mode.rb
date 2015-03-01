@@ -1,4 +1,4 @@
-def mode(array)
+def get_mode(array)
   return if not valid_array?(array)
   array  = clean_array(array)
   result = repetition_hash(array)
