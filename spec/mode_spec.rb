@@ -17,13 +17,13 @@ describe Average do
     end
 
     context 'with a empty array' do
-      it 'should return a empty array' do
+      it 'should return nil' do
         expect(get_mode([])).to eq(nil)
       end
     end
 
     context 'with a nil object' do
-      it 'should return a empty array' do
+      it 'should return a nil' do
         expect(get_mode([])).to eq(nil)
       end
     end
