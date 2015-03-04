@@ -97,7 +97,7 @@ describe Average do
   end
 
   describe '#clean_array' do
-    context 'with an array that contains valid that could be converted to a digit' do
+    context 'with an array that has a valid mixed-array structure' do
       it 'should return an array without string and with the correct numeric format' do
         expect(clean_array(valid_array)).to eq([3, 4.0, 5, 2, 0.3])
       end
