@@ -32,23 +32,23 @@ describe Average do
 
   end
 
-  describe '#unique_mode' do
+  describe '#get_unique_mode' do
 
     context 'with a array of integers' do
       it 'should calculate the correct mode returning only one mode' do
-        expect(unique_mode(mode_array)).to eq(1)
+        expect(get_unique_mode(mode_array)).to eq(1)
       end
     end
 
     context 'with a empty array' do
       it 'should return nil' do
-        expect(unique_mode([])).to eq(nil)
+        expect(get_unique_mode([])).to eq(nil)
       end
     end
 
     context 'with a nil object' do
       it 'should return nil' do
-        expect(unique_mode(nil)).to eq(nil)
+        expect(get_unique_mode(nil)).to eq(nil)
       end
     end
 
