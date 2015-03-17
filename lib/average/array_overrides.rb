@@ -12,4 +12,9 @@ class Array
   def median
     get_median(self)
   end
+
+  def unique_mode
+    get_unique_mode(self)
+  end
+
 end
