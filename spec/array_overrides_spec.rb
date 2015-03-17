@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Average do
 
-  let(:int_array)   { [3,4,5]                  }
+  let(:int_array)   { [3,4,5] }
 
   describe '.mean' do
     context 'should give back the same result as' do
@@ -24,6 +24,14 @@ describe Average do
     context 'should give back the same result as ' do
       it 'get_median([X,X,X,X])' do
        expect(int_array.median).to eq(get_median(int_array))
+      end
+    end
+  end
+
+  describe '.unique_mode' do
+    context 'should give back the same result as ' do
+      it 'get_unique_mode([X,X,X,X])' do
+       expect(int_array.unique_mode).to eq(get_unique_mode(int_array))
       end
     end
   end
