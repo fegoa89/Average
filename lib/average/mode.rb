@@ -23,7 +23,7 @@ def build_repetition_result(array)
    array.inject({}) { |key, value| key[value] = array.count(value.to_f); key }
 end
 
-def unique_mode(array)
+def get_unique_mode(array)
   # only for Ruby versions bigger than 1.8.7 -> http://apidock.com/ruby/v1_8_7_72/Enumerable/max_by
   return if !valid_array?(array)
   clean_array(array).max_by { |x| clean_array(array).count(x) }
