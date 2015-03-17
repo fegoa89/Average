@@ -33,12 +33,11 @@ It gives back an array due that could be possible to have more than one mode in 
     $ [1, 2, 2, 2, 3, 3, 7, 7, 7, 9].mode
     $ [2, 7]
 
-But if you want to have only a unique mode, you can use 'unique_mode' method.
-
+But if you want to have only a unique mode, you can use 'unique_mode' method (Only for Ruby versions bigger than 1.8.7 -> http://apidock.com/ruby/v1_8_7_72/Enumerable/max_by).
 
     $ [1, 2, 2, 2, 3, 3, 7, 7, 7, 9].unique_mode
     $ 2
-    * Only for Ruby versions bigger than 1.8.7 -> http://apidock.com/ruby/v1_8_7_72/Enumerable/max_by
+
 Get Median
 
     $ [3,4,5].median
