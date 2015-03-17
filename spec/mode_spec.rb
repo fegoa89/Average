@@ -7,6 +7,8 @@ describe Average do
   let(:mode_array)  { [1,1,2,2,3,4]            }
 
   let(:mixed_array) { [3, 4.0, 5, 2.0, 3, 1.0] }
+  let(:array_with_two_modes) { [1, 2, 2, 2, 3, 3, 7, 7, 7, 9] }
+  let(:array_with_one_mode)  { [2, 4, 6, 14, 21, 24, 229, 24, 24, 39] }
 
   describe '#get_mode' do
 
@@ -76,12 +78,27 @@ describe Average do
       end
     end
 
-    context 'with a empty array' do
+    context 'with a nil object' do
       it 'should return nil' do
         expect(repetition_hash(nil)).to eql(nil)
       end
     end
 
+  end
+
+  describe 'testing returned values' do
+
+    context 'with an array that has two modes' do
+      it 'should return an array with two values' do
+        expect(get_mode(array_with_two_modes)).to eq([2, 7])
+      end
+    end
+
+    context 'with an array that has one modes' do
+      it 'should return an array with two values' do
+        expect(get_mode(array_with_one_mode)).to eq(24)
+      end
+    end
   end
 
 end
