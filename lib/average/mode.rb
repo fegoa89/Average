@@ -6,8 +6,7 @@ def get_mode(array)
 end
 
 def repetition_hash(array)
-  return if !valid_array?(array)
-  array  = clean_array(array)
+  return if not valid_array?(array)
   result = array.inject({}) { |key, value| key[value] = array.count(value.to_f); key }
   { hash_result: result, max_repetition: result.values.max }
 end
