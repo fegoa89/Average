@@ -1,7 +1,6 @@
 def get_median(array)
   return if not valid_array?(array)
-  array = clean_array(array)
-  calculate_median(array)
+  calculate_median(clean_array(array))
 end
 
 def calculate_median(array)
