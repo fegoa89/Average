@@ -1,3 +1,5 @@
+[![Build Status](https://semaphoreci.com/api/v1/projects/fd96a25e-c843-44ff-8c43-1da486ca03a6/425376/badge.svg)](https://semaphoreci.com/fegoa89/average)      
+
 # Average
 
 Simple gem to calculate mean, median and mode from an array.
