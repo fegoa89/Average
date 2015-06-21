@@ -73,14 +73,8 @@ describe Average do
     end
 
     context 'with a empty array' do
-      it 'should return nil' do
-        expect(repetition_hash([])).to eql(nil)
-      end
-    end
-
-    context 'with a nil object' do
-      it 'should return nil' do
-        expect(repetition_hash(nil)).to eql(nil)
+      it 'should return a hash with empty values' do
+        expect(repetition_hash([])).to eql({:hash_result=>{}, :max_repetition=>nil})
       end
     end
 
