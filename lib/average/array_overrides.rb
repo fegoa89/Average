@@ -1,5 +1,8 @@
-require 'average/mean'
-require 'average/median'
+include Mean
+include Mode
+include Median
+include AverageHelper
+
 class Array
   def mean
     get_mean(self)
