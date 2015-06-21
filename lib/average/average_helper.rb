@@ -1,4 +1,3 @@
-
 module AverageHelper
   def valid_array?(array)
     # Valid if:
@@ -43,4 +42,5 @@ module AverageHelper
     end
     array
   end
+
 end

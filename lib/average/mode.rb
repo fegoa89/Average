@@ -1,5 +1,4 @@
 module Mode
-
   def get_mode(array)
     if valid_array?(array)
       result = repetition_hash( clean_array(array) )
