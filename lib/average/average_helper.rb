@@ -11,7 +11,7 @@ module AverageHelper
     # Go through all elements
     result = true
     array.each do |array_element|
-      if not value_can_be_handled?(array_element)
+      if !value_can_be_handled?(array_element)
         result = false
       end
     end

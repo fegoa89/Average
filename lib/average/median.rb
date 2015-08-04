@@ -1,7 +1,8 @@
 module Median
   def get_median(array)
-    return if not valid_array?(array)
-    calculate_median(clean_array(array))
+    if valid_array?(array)
+      calculate_median(clean_array(array))
+    end
   end
 
   def calculate_median(array)
