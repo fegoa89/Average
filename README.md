@@ -57,7 +57,3 @@ All methods described aboved can handle an array of integers, floats, strings or
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/fegoa89/average/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
